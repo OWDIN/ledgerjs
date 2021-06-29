@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "@owdin/ledger-libs",
+  "name": "ledger-libs",
   "version": "0.0.6",
   "workspaces": [
     "packages/cryptoassets"
