@@ -534,6 +534,37 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
+  hupayx: {
+    type: "CryptoCurrency",
+    id: "hupayx",
+    coinType: 118,
+    name: "Hupayx",
+    managerAppName: "Hupayx",
+    ticker: "HPX",
+    scheme: "cosmos",
+    color: "#16192f",
+    family: "cosmos",
+    // FIXME: enable it back when confirmation number is fixed
+    // blockAvgTime: 8,
+    units: [
+      {
+        name: "Hpx",
+        code: "HPX",
+        magnitude: 6,
+      },
+      {
+        name: "microHpx",
+        code: "uhpx",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        tx: "https://scan.hupayx.com/tx/$hash",
+        address: "https://scan.hupayx.com/validators/$address",
+      },
+    ],
+  },
   cosmos_testnet: {
     type: "CryptoCurrency",
     id: "cosmos_testnet",
