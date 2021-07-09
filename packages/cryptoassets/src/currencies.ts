@@ -503,37 +503,6 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
-  hupayx: {
-    type: "CryptoCurrency",
-    id: "hupayx",
-    coinType: 118,
-    name: "Hupayx",
-    managerAppName: "Hupayx",
-    ticker: "HPX",
-    scheme: "cosmos",
-    color: "#16192f",
-    family: "cosmos",
-    // FIXME: enable it back when confirmation number is fixed
-    // blockAvgTime: 8,
-    units: [
-      {
-        name: "Hpx",
-        code: "HPX",
-        magnitude: 6,
-      },
-      {
-        name: "microHpx",
-        code: "uhpx",
-        magnitude: 0,
-      },
-    ],
-    explorerViews: [
-      {
-        tx: "https://scan.hupayx.com/tx/$hash",
-        address: "https://scan.hupayx.com/validators/$address",
-      },
-    ],
-  },
   cosmos: {
     type: "CryptoCurrency",
     id: "cosmos",
@@ -595,6 +564,37 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       {
         tx: "https://testnet.mintscan.io/txs/$hash",
         address: "https://testnet.mintscan.io/validators/$address",
+      },
+    ],
+  },
+  hupayx_hub: {
+    type: "CryptoCurrency",
+    id: "hupayx_hub",
+    coinType: 118,
+    name: "Hupayx",
+    managerAppName: "Hupayx",
+    ticker: "HPX",
+    scheme: "hupayx_hub",
+    color: "#16192f",
+    family: "cosmos",
+    // FIXME: enable it back when confirmation number is fixed
+    // blockAvgTime: 8,
+    units: [
+      {
+        name: "Hpx",
+        code: "HPX",
+        magnitude: 6,
+      },
+      {
+        name: "microHpx",
+        code: "uhpx",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        tx: "https://scan.hupayx.com/tx/$hash",
+        address: "https://scan.hupayx.com/validators/$address",
       },
     ],
   },

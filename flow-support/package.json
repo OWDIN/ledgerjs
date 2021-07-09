@@ -6,7 +6,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@ledgerhq/cryptoassets": "^5.52.0",
+    "@owdin/cryptoassets": "^6.0.7",
     "@ledgerhq/devices": "^5.51.1",
     "@ledgerhq/errors": "^5.50.0",
     "@ledgerhq/logs": "^5.50.0",
