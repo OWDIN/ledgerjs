@@ -503,13 +503,13 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
-  cosmos: {
+  hupayx: {
     type: "CryptoCurrency",
     id: "cosmos",
     coinType: 118,
-    name: "Cosmos Hub",
-    managerAppName: "Cosmos",
-    ticker: "ATOM",
+    name: "Hupayx Hub",
+    managerAppName: "Hupayx",
+    ticker: "HPX",
     scheme: "cosmos",
     color: "#16192f",
     family: "cosmos",
@@ -517,20 +517,20 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     // blockAvgTime: 8,
     units: [
       {
-        name: "Atom",
-        code: "ATOM",
+        name: "Hpx",
+        code: "HPX",
         magnitude: 6,
       },
       {
-        name: "microAtom",
-        code: "uatom",
+        name: "microHpx",
+        code: "uhpx",
         magnitude: 0,
       },
     ],
     explorerViews: [
       {
-        tx: "https://www.mintscan.io/txs/$hash",
-        address: "https://www.mintscan.io/validators/$address",
+        tx: "https://scan.hupayx.com/tx/$hash",
+        address: "https://scan.hupayx.com/validators/$address",
       },
     ],
   },
