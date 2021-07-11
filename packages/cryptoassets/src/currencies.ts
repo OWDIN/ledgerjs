@@ -539,13 +539,13 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     id: "hupayx",
     coinType: 118,
     name: "Hupayx Hub",
-    managerAppName: "Cosmos",
+    managerAppName: "Hupayx",
     ticker: "HPX",
     scheme: "hupayx",
     color: "#16192f",
     family: "cosmos",
-    isTestnetFor: "cosmos",
-    disableCountervalue: true,
+    // isTestnetFor: "cosmos",
+    // disableCountervalue: true,
     // FIXME: enable it back when confirmation number is fixed
     // blockAvgTime: 8,
     units: [
