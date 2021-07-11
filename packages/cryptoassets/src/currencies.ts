@@ -536,7 +536,7 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
   },
   hupayx: {
     type: "CryptoCurrency",
-    id: "hupayx",
+    id: "cosmos",
     coinType: 118,
     name: "Hupayx Hub",
     managerAppName: "Cosmos",
