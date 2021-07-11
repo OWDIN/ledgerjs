@@ -544,6 +544,8 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     scheme: "hupayx",
     color: "#16192f",
     family: "cosmos",
+    isTestnetFor: "cosmos",
+    disableCountervalue: true,
     // FIXME: enable it back when confirmation number is fixed
     // blockAvgTime: 8,
     units: [
