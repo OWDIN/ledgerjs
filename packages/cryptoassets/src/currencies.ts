@@ -536,7 +536,7 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
   },
   hupyax: {
     type: "CryptoCurrency",
-    id: "hupayx",
+    id: "cosmos",
     coinType: 118,
     name: "Hupayx Hub",
     managerAppName: "Cosmos",
@@ -560,7 +560,7 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     ],
     explorerViews: [
       {
-        tx: "https://scan.hupay.com/tx/$hash",
+        tx: "https://scan.hupayx.com/tx/$hash",
         address: "https://scan.hupayx.com/validators/$address",
       },
     ],
