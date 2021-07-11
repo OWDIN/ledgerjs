@@ -541,7 +541,7 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     name: "Hupayx Hub",
     managerAppName: "Cosmos",
     ticker: "HPX",
-    scheme: "hupayx",
+    scheme: "cosmos",
     color: "#16192f",
     family: "cosmos",
     // FIXME: enable it back when confirmation number is fixed
