@@ -508,7 +508,7 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     id: "cosmos",
     coinType: 118,
     name: "Hupayx Hub",
-    managerAppName: "Hupayx",
+    managerAppName: "Cosmos",
     ticker: "HPX",
     scheme: "cosmos",
     color: "#16192f",
