@@ -503,47 +503,45 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
-  // cosmos: {
-  //   type: "CryptoCurrency",
-  //   id: "cosmos",
-  //   coinType: 118,
-  //   name: "Cosmos",
-  //   managerAppName: "Cosmos",
-  //   ticker: "ATOM",
-  //   scheme: "cosmos",
-  //   color: "#16192f",
-  //   family: "cosmos",
-  //   // FIXME: enable it back when confirmation number is fixed
-  //   // blockAvgTime: 8,
-  //   units: [
-  //     {
-  //       name: "Atom",
-  //       code: "ATOM",
-  //       magnitude: 6,
-  //     },
-  //     {
-  //       name: "microAtom",
-  //       code: "uatom",
-  //       magnitude: 0,
-  //     },
-  //   ],
-  //   explorerViews: [
-  //     {
-  //       tx: "https://www.mintscan.io/txs/$hash",
-  //       address: "https://www.mintscan.io/validators/$address",
-  //     },
-  //   ],
-  // },
-  hupayx: {
+  cosmos: {
+    type: "CryptoCurrency",
+    id: "cosmos",
+    coinType: 118,
+    name: "Cosmos",
+    managerAppName: "Cosmos",
+    ticker: "ATOM",
+    scheme: "cosmos",
+    color: "#16192f",
+    family: "cosmos",
+    // FIXME: enable it back when confirmation number is fixed
+    // blockAvgTime: 8,
+    units: [
+      {
+        name: "Atom",
+        code: "ATOM",
+        magnitude: 6,
+      },
+      {
+        name: "microAtom",
+        code: "uatom",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        tx: "https://www.mintscan.io/txs/$hash",
+        address: "https://www.mintscan.io/validators/$address",
+      },
+    ],
+  },
+  hupyax: {
     type: "CryptoCurrency",
     id: "hupayx",
     coinType: 118,
     name: "Hupayx Hub",
     managerAppName: "Cosmos",
     ticker: "HPX",
-    scheme: "cosmos",
-    // isTestnetFor: "cosmos",
-    // disableCountervalue: true,
+    scheme: "hupayx",
     color: "#16192f",
     family: "cosmos",
     // FIXME: enable it back when confirmation number is fixed
@@ -562,11 +560,44 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     ],
     explorerViews: [
       {
-        tx: "https://scan.hupayx.com/tx/$hash",
+        tx: "https://scan.hupay.com/tx/$hash",
         address: "https://scan.hupayx.com/validators/$address",
       },
     ],
   },
+  // cosmos_testnet: {
+  //   type: "CryptoCurrency",
+  //   id: "cosmos_testnet",
+  //   coinType: 118,
+  //   name: "Cosmos (Testnet)",
+  //   managerAppName: "Cosmos",
+  //   ticker: "MUON",
+  //   scheme: "cosmos_testnet",
+  //   isTestnetFor: "cosmos",
+  //   disableCountervalue: true,
+  //   color: "#16192f",
+  //   family: "cosmos",
+  //   // FIXME: enable it back when confirmation number is fixed
+  //   // blockAvgTime: 8,
+  //   units: [
+  //     {
+  //       name: "Muon",
+  //       code: "MUON",
+  //       magnitude: 6,
+  //     },
+  //     {
+  //       name: "microMuon",
+  //       code: "umuon",
+  //       magnitude: 0,
+  //     },
+  //   ],
+  //   explorerViews: [
+  //     {
+  //       tx: "https://testnet.mintscan.io/txs/$hash",
+  //       address: "https://testnet.mintscan.io/validators/$address",
+  //     },
+  //   ],
+  // },
   dash: {
     type: "CryptoCurrency",
     id: "dash",
@@ -889,7 +920,7 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       {
         tx: "https://blockscout.com/etc/mainnet/tx/$hash/internal-transactions",
         address:
-          "https://blockscout.com/etc/mainnet/address/$address/transactions",
+            "https://blockscout.com/etc/mainnet/address/$address/transactions",
       },
     ],
   },
@@ -1272,9 +1303,9 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     explorerViews: [
       {
         tx:
-          "https://www.kin.org/blockchainInfoPage/?&dataType=public&header=Transaction&id=$hash",
+            "https://www.kin.org/blockchainInfoPage/?&dataType=public&header=Transaction&id=$hash",
         address:
-          "https://www.kin.org/blockchainAccount/?&dataType=public&header=accountID&id=$address",
+            "https://www.kin.org/blockchainAccount/?&dataType=public&header=accountID&id=$address",
       },
     ],
   },
@@ -2811,16 +2842,16 @@ export function registerCryptoCurrency(id: string, currency: CryptoCurrency) {
  * @param {*} withTerminated
  */
 export function listCryptoCurrencies(
-  withDevCrypto = false,
-  withTerminated = false
+    withDevCrypto = false,
+    withTerminated = false
 ): CryptoCurrency[] {
   return withTerminated
-    ? withDevCrypto
-      ? cryptocurrenciesArray
-      : prodCryptoArray
-    : withDevCrypto
-    ? cryptocurrenciesArrayWithoutTerminated
-    : prodCryptoArrayWithoutTerminated;
+      ? withDevCrypto
+          ? cryptocurrenciesArray
+          : prodCryptoArray
+      : withDevCrypto
+          ? cryptocurrenciesArrayWithoutTerminated
+          : prodCryptoArrayWithoutTerminated;
 }
 
 /**
@@ -2828,7 +2859,7 @@ export function listCryptoCurrencies(
  * @param {*} f
  */
 export function findCryptoCurrency(
-  f: (arg0: CryptoCurrency) => boolean
+    f: (arg0: CryptoCurrency) => boolean
 ): CryptoCurrency | null | undefined {
   return cryptocurrenciesArray.find(f);
 }
@@ -2838,7 +2869,7 @@ export function findCryptoCurrency(
  * @param {*} scheme
  */
 export function findCryptoCurrencyByScheme(
-  scheme: string
+    scheme: string
 ): CryptoCurrency | null | undefined {
   return cryptocurrenciesByScheme[scheme];
 }
@@ -2848,7 +2879,7 @@ export function findCryptoCurrencyByScheme(
  * @param {*} ticker
  */
 export function findCryptoCurrencyByTicker(
-  ticker: string
+    ticker: string
 ): CryptoCurrency | null | undefined {
   return cryptocurrenciesByTicker[ticker];
 }
@@ -2858,7 +2889,7 @@ export function findCryptoCurrencyByTicker(
  * @param {*} id
  */
 export function findCryptoCurrencyById(
-  id: string
+    id: string
 ): CryptoCurrency | null | undefined {
   return cryptocurrenciesById[id];
 }
@@ -2868,16 +2899,16 @@ export function findCryptoCurrencyById(
  * @param {*} keyword
  */
 export const findCryptoCurrencyByKeyword = (
-  keyword: string
+    keyword: string
 ): CryptoCurrency | null | undefined => {
   const r = findCryptoCurrency((c) => {
     const search = keyword.replace(/ /, "").toLowerCase();
     return (
-      c.id === search ||
-      c.name.replace(/ /, "").toLowerCase() === search ||
-      (c.managerAppName &&
-        c.managerAppName.replace(/ /, "").toLowerCase() === search) ||
-      c.ticker.toLowerCase() === search
+        c.id === search ||
+        c.name.replace(/ /, "").toLowerCase() === search ||
+        (c.managerAppName &&
+            c.managerAppName.replace(/ /, "").toLowerCase() === search) ||
+        c.ticker.toLowerCase() === search
     );
   });
   return r;
@@ -2888,7 +2919,7 @@ export const findCryptoCurrencyByKeyword = (
  * @param {*} id
  */
 export const hasCryptoCurrencyId = (id: string): boolean =>
-  id in cryptocurrenciesById;
+    id in cryptocurrenciesById;
 
 /**
  *
