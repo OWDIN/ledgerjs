@@ -503,14 +503,47 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
+  cosmos: {
+    type: "CryptoCurrency",
+    id: "cosmos",
+    coinType: 118,
+    name: "Cosmos",
+    managerAppName: "Cosmos",
+    ticker: "ATOM",
+    scheme: "cosmos",
+    color: "#16192f",
+    family: "cosmos",
+    // FIXME: enable it back when confirmation number is fixed
+    // blockAvgTime: 8,
+    units: [
+      {
+        name: "Atom",
+        code: "ATOM",
+        magnitude: 6,
+      },
+      {
+        name: "microAtom",
+        code: "uatom",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        tx: "https://www.mintscan.io/txs/$hash",
+        address: "https://www.mintscan.io/validators/$address",
+      },
+    ],
+  },
   hupayx: {
     type: "CryptoCurrency",
     id: "hupayx",
     coinType: 118,
     name: "Hupayx Hub",
     managerAppName: "Cosmos",
-    ticker: "HPX",
+    ticker: "MUON",
     scheme: "hupayx",
+    isTestnetFor: "cosmos",
+    disableCountervalue: true,
     color: "#16192f",
     family: "cosmos",
     // FIXME: enable it back when confirmation number is fixed
@@ -531,39 +564,6 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       {
         tx: "https://scan.hupayx.com/tx/$hash",
         address: "https://scan.hupayx.com/validators/$address",
-      },
-    ],
-  },
-  cosmos_testnet: {
-    type: "CryptoCurrency",
-    id: "cosmos_testnet",
-    coinType: 118,
-    name: "Cosmos (Testnet)",
-    managerAppName: "Cosmos",
-    ticker: "MUON",
-    scheme: "cosmos_testnet",
-    isTestnetFor: "cosmos",
-    disableCountervalue: true,
-    color: "#16192f",
-    family: "cosmos",
-    // FIXME: enable it back when confirmation number is fixed
-    // blockAvgTime: 8,
-    units: [
-      {
-        name: "Muon",
-        code: "MUON",
-        magnitude: 6,
-      },
-      {
-        name: "microMuon",
-        code: "umuon",
-        magnitude: 0,
-      },
-    ],
-    explorerViews: [
-      {
-        tx: "https://testnet.mintscan.io/txs/$hash",
-        address: "https://testnet.mintscan.io/validators/$address",
       },
     ],
   },
