@@ -540,7 +540,7 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     coinType: 118,
     name: "Hupayx Hub",
     managerAppName: "Cosmos",
-    ticker: "MUON",
+    ticker: "HPX",
     scheme: "hupayx",
     isTestnetFor: "cosmos",
     disableCountervalue: true,
