@@ -507,7 +507,7 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
     type: "CryptoCurrency",
     id: "cosmos",
     coinType: 118,
-    name: "Cosmos",
+    name: "Cosmos Hub",
     managerAppName: "Cosmos",
     ticker: "ATOM",
     scheme: "cosmos",
