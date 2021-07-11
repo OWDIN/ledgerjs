@@ -534,7 +534,7 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
-  hupyax: {
+  hupayx: {
     type: "CryptoCurrency",
     id: "hupayx",
     coinType: 118,
