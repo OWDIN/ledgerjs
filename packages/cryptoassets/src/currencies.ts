@@ -633,39 +633,39 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
   //     },
   //   ],
   // },
-  // cosmos_testnet: {
-  //   type: "CryptoCurrency",
-  //   id: "cosmos_testnet",
-  //   coinType: 118,
-  //   name: "Cosmos (Testnet)",
-  //   managerAppName: "Cosmos",
-  //   ticker: "MUON",
-  //   scheme: "cosmos_testnet",
-  //   isTestnetFor: "cosmos",
-  //   disableCountervalue: true,
-  //   color: "#16192f",
-  //   family: "cosmos",
-  //   // FIXME: enable it back when confirmation number is fixed
-  //   // blockAvgTime: 8,
-  //   units: [
-  //     {
-  //       name: "Muon",
-  //       code: "MUON",
-  //       magnitude: 6,
-  //     },
-  //     {
-  //       name: "microMuon",
-  //       code: "umuon",
-  //       magnitude: 0,
-  //     },
-  //   ],
-  //   explorerViews: [
-  //     {
-  //       tx: "https://testnet.mintscan.io/txs/$hash",
-  //       address: "https://testnet.mintscan.io/validators/$address",
-  //     },
-  //   ],
-  // },
+  cosmos_testnet: {
+    type: "CryptoCurrency",
+    id: "cosmos_testnet",
+    coinType: 118,
+    name: "Cosmos (Testnet)",
+    managerAppName: "Cosmos",
+    ticker: "MUON",
+    scheme: "cosmos_testnet",
+    isTestnetFor: "cosmos",
+    disableCountervalue: true,
+    color: "#16192f",
+    family: "cosmos",
+    // FIXME: enable it back when confirmation number is fixed
+    // blockAvgTime: 8,
+    units: [
+      {
+        name: "Muon",
+        code: "MUON",
+        magnitude: 6,
+      },
+      {
+        name: "microMuon",
+        code: "umuon",
+        magnitude: 0,
+      },
+    ],
+    explorerViews: [
+      {
+        tx: "https://testnet.mintscan.io/txs/$hash",
+        address: "https://testnet.mintscan.io/validators/$address",
+      },
+    ],
+  },
   dash: {
     type: "CryptoCurrency",
     id: "dash",
