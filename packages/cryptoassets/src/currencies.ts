@@ -503,34 +503,67 @@ const cryptocurrenciesById: Record<string, CryptoCurrency> = {
       },
     ],
   },
+  // cosmos: {
+  //   type: "CryptoCurrency",
+  //   id: "cosmos",
+  //   coinType: 118,
+  //   name: "Cosmos",
+  //   managerAppName: "Cosmos",
+  //   ticker: "ATOM",
+  //   scheme: "cosmos",
+  //   color: "#16192f",
+  //   family: "cosmos",
+  //   // FIXME: enable it back when confirmation number is fixed
+  //   // blockAvgTime: 8,
+  //   units: [
+  //     {
+  //       name: "Atom",
+  //       code: "ATOM",
+  //       magnitude: 6,
+  //     },
+  //     {
+  //       name: "microAtom",
+  //       code: "uatom",
+  //       magnitude: 0,
+  //     },
+  //   ],
+  //   explorerViews: [
+  //     {
+  //       tx: "https://www.mintscan.io/txs/$hash",
+  //       address: "https://www.mintscan.io/validators/$address",
+  //     },
+  //   ],
+  // },
   cosmos: {
     type: "CryptoCurrency",
     id: "cosmos",
     coinType: 118,
-    name: "Cosmos",
+    name: "Hupayx Hub",
     managerAppName: "Cosmos",
-    ticker: "ATOM",
+    ticker: "HPX",
     scheme: "cosmos",
     color: "#16192f",
     family: "cosmos",
+    // isTestnetFor: "cosmos",
+    // disableCountervalue: true,
     // FIXME: enable it back when confirmation number is fixed
     // blockAvgTime: 8,
     units: [
       {
-        name: "Atom",
-        code: "ATOM",
+        name: "Hpx",
+        code: "HPX",
         magnitude: 6,
       },
       {
-        name: "microAtom",
-        code: "uatom",
+        name: "microHpx",
+        code: "uhpx",
         magnitude: 0,
       },
     ],
     explorerViews: [
       {
-        tx: "https://www.mintscan.io/txs/$hash",
-        address: "https://www.mintscan.io/validators/$address",
+        tx: "https://scan.hupayx.com/tx/$hash",
+        address: "https://scan.hupayx.com/validators/$address",
       },
     ],
   },
