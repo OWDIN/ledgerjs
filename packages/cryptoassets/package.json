@@ -29,5 +29,5 @@
     "watch": "bash ../../script/watch.sh",
     "doc": "bash ../../script/doc.sh"
   },
-  "gitHead": "dd0dea64b58e5a9125c8a422dcffd29e5ef6abec"
+  "gitHead": "53e833c70993fa57881fcabbb53a13e0b0d7e468"
 }
